@@ -40,6 +40,8 @@ describe('object-view', function () {
     v.available = false;
     v.available.should.eql(false);
     v.available.should.eql(real.properties.nest.ed);
+    
+    v = null; // vanish
 
     real.should.eql({
       title: 'New Label',
