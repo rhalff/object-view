@@ -32,14 +32,13 @@ describe('object-view', function () {
     var v = ov(view, real);
 
     v.label = 'New Label';
-    v.label.should.eql(real.title);
+    real.title.should.eql('New Label');
 
     v.description = 'New Description';
-    v.description.should.eql(real.properties.some);
+    real.properties.some.should.eql('New Description');
 
     v.available = false;
-    v.available.should.eql(false);
-    v.available.should.eql(real.properties.nest.ed);
+    real.properties.nest.ed.should.eql(false);
     
     v = null; // vanish
 
