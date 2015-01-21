@@ -1,14 +1,18 @@
 {
-  "name": "shim-object",
-  "version": "1.0.0",
+  "name": "object-view",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Rob Halff",
   "license": "ISC",
   "dependencies": {
     "dot-object": "^0.6.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.1.0",
+    "should": "^4.6.1"
   }
 }
