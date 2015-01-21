@@ -7,15 +7,16 @@ module.exports = function ObjectView(view, obj) {
   for (k in view) {
     if (view.hasOwnProperty(k)) {
       (function() {
-        var p = k.split('.').pop();
-        var s = dotob.pick(k, obj);
+        var p = k.split('.'); // pick
+        var prop = p.pop();
+        var subject = p.length ? dotob.pick(p.join('.'), obj) : obj;
         Object.defineProperty(shim, view[k], {
           enumerable: true,
           get: function() {
-            return s;
+            return subject[prop];
           },
           set: function(value) {
-            s = value;
+            subject[prop] = value;
           }
         });
       })();
