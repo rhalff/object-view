@@ -67,4 +67,4 @@ Our initial source object will now look like
 }
 ```
 
-For objects with complex structures several different views could be created.
+For objects with complex structures several different views can be created.
