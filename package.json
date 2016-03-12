@@ -1,6 +1,6 @@
 {
   "name": "object-view",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -26,6 +26,9 @@
   "tonicExampleFilename": "example.js",
   "homepage": "https://github.com/rhalff/object-view",
   "standard": {
-    "globals": [ "describe", "it" ]
+    "globals": [
+      "describe",
+      "it"
+    ]
   }
 }
