@@ -1,7 +1,7 @@
 {
   "name": "object-view",
   "version": "1.0.0",
-  "description": "",
+  "description": "Take another view at your objects",
   "main": "index.js",
   "scripts": {
     "test": "standard && mocha"
